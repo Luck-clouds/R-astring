@@ -1,5 +1,5 @@
 const port = 5001; // 服务器端口  
-const host = '172.18.4.143'; // 服务器IP地址  
+const host = 'ip'; // 服务器IP地址  
 //const blacklist = ['123.45.67.89', '98.76.54.32']; // 示例黑名单IP地址  
 const moment = require('moment-timezone'); // 引入moment-timezone模块，用于处理时区  
 const express = require('express'); // 引入express模块，用于创建服务器  
