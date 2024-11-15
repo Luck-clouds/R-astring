@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	/* background-color: aquamarine; */
+	background: url('image.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	/* 允许高度根据内容自动调整 */
+}
+
+.form-box {
+	position: relative;
+	width: 450px;
+	height: 550px;
+	margin-right: 600px;
+	/* background-color: red; */
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.button-container {
+	position: absolute;
+	top: 80%;
+	right: 30px;
+}
+
+.button-containers {
+	position: absolute;
+	top: 80%;
+	left: 30px;
+}
+
+/* index.css */
+.images img {
+	margin-bottom: 100px;
+	max-height: 260px;
+	object-fit: cover;
+	height: auto;
+
+}
+
+.button {
+	width: 150px;
+	height: 50px;
+	background-color: #1890ff;
+	border-radius: 12px;
+	border: none;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.buttons {
+	width: 150px;
+	height: 50px;
+	background-color: #1890ff;
+	border-radius: 12px;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.counter {
+	text-shadow: 0 0 2px hsl(40, 28.57%, 28.82%), 0 0 2px hsl(40, 28.57%, 28.82%), 0 0 2px hsl(40, 28.57%, 28.82%);
+	/*多个叠加*/
+	font-size: 15px;
+	text-shadow: 3px 2px 3px #19caff;
+	color: #55aaff;
+	position: absolute;
+	top: 100%;
+	right: 30px;
+}
+
+.counters {
+	text-shadow: 0 0 2px hsl(40, 28.57%, 28.82%), 0 0 2px hsl(40, 28.57%, 28.82%), 0 0 2px hsl(40, 28.57%, 28.82%);
+	/*多个叠加*/
+	font-size: 15px;
+	text-shadow: 3px 2px 3px #19caff;
+	color: #55aaff;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+}
+
+.button:hover,
+.buttons:hover {
+	background-color: #fff;
+	color: #1890ff;
+	border: 1px solid #ccc;
+}
+
+.right {
+	width: 200px;
+	height: 200px;
+}
+
+input:focus~label,
+input:valid~label {
+	top: -5px;
+}
+
+/* 添加媒体查询以适应小屏幕 */
+@media (max-width: 600px) {
+	.form-box {
+		padding: 200px;
+		/* 在小屏幕上减少内边距 */
+		margin: 30px;
+	}
+
+	.button,
+	.buttons {
+		font-size: 15px;
+		/* 在小屏幕上减小字体大小 */
+	}
+}

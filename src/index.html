@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./index.css">
+		<title>点我领取涩图</title>
+	</head>
+	<body id="body">
+		<section>
+			<div class="form-box">
+				<div class="images"> <img id="randomImage" src="./涩涩.jpg" title="这是涩图喵~" alt="涩图加载失败喵~"></div>
+				<div class="button-container">
+					<button class="button" id="uploadButton">赏张涩图</button>
+					<!-- <div class="counter" id="uploadCounter">已经赏了 涩图</div> -->
+				</div>
+				<div class="button-containers">
+					<button class="buttons" id="randomImageButton">来张涩图</button>
+					<!-- <div class="counters" id="randomImageCounter">已经来了 涩图</div> -->
+				</div>
+			</div>
+			</div>
+
+			<!-- 隐藏的文件上传表单 -->
+			<form id="uploadForm" action="/upload-image" method="post" enctype="multipart/form-data"
+				style="display:none;">
+				<input type="file" name="image" accept="image/*" required>
+				<button type="submit">上传（隐藏按钮，通过JavaScript触发）</button>
+			</form>
+			<div class="right">
+				<!-- <span>芜湖</span> -->
+			</div>
+		</section>
+		<script src="./index.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	</body>
+</html>
