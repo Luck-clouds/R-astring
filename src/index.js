@@ -145,7 +145,7 @@ let uploadCount = 0;
 let randomImageCount = 0;
 
 // 监听按钮点击事件  
-uploadButton.addEventListener('click', () => {
+uploadButton.addEventLis  tener('click', () => {
 	uploadCount++;
 	uploadCounter.textContent = `已经赏了${uploadCount}张涩图`;
 });
